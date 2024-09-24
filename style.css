@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #ff7ad7);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #f9f9f9, #ffb3e8);
+    }
+    50% {
+        background: linear-gradient(135deg, #ffb3e8, #f9f9f9);
+    }
+    100% {
+        background: linear-gradient(135deg, #f9f9f9, #ffb3e8);
+    }
+}
+
+nav {
+    background-color: #ffb3e8;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffb3e8;
+}
+
+button {
+    background-color: #ec58c0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff30c1;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.section {
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.section h2 {
+    color: #ff30c1;
+    margin-top: 0;
+}
+
+.ia-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+    justify-content: center; /* Centralizar os itens */
+}
+
+.ia-block {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    flex: 1 1 300px; /* Flexível, mas com largura mínima de 300px */
+    text-align: left;
+}
+
+.ia-block:hover {
+    background-color: #f0f0f0;
+}
+
+.ia-block a {
+    color: #ff7ad7;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.ia-block a:hover {
+    text-decoration: underline;
+}
+
+.ia-block p {
+    color: #555;
+    margin: 5px 0 0;
+}
+
+footer {
+    background-color: #ffb3e8;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    font-size: 24px;
+    font-weight: bold;
+}
